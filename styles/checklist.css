@@ -1,0 +1,19 @@
+.checklist li {
+    list-style-type: none;
+    cursor:pointer;
+}
+
+.checklist li::before {
+    content:"\2610";
+    padding-right:0.5em;
+}
+
+.checklist li.checked::before {
+    content:"\2611";
+    padding-right:0.5em;
+    display:inline-block; /* om line-through weg te krijgen op before content, enkel getest op Chrome */
+}
+
+.checklist li.checked {
+    text-decoration-line: line-through;
+}

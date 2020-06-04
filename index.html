@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/checklist.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+    <title>Recept simulator</title>
+</head>
+<body>
+<div class="controls">
+    <p>Ingredient invoer (hoeveelheid per persoon!)</p>
+    <input type="number" min="0" id="txtAmountPerPerson">
+    <input id="txtDescription" type="text" placeholder="Beschrijving van het ingredient">
+    <input type="button" id="btnAdd" value="Voeg ingredient toe">
+</div>
+<div class="recipe">
+    <p>Recept voor tartiflette</p>
+    <span>Ingredienten voor</span>
+    <input id="txtPersonCount" type="number" min="1" value="2">
+    <span>personen</span>
+    <ul class="checklist lstIngredients">
+        <li><span class="amount" data-amount-per-person="62.5">???</span> gram gerookte spek</li>
+        <li class="checked"><span class="amount" data-amount-per-person="1">???</span> x ui</li>
+        <li><span class="amount" data-amount-per-person="2.5">???</span> cl witte wijn</li>
+        <li><span class="amount" data-amount-per-person="4">???</span> cl room</li>
+        <li><span class="amount" data-amount-per-person="0.310">???</span> kilo aardappelen</li>
+        <li><span class="amount" data-amount-per-person="0.25">???</span> x reblochon kaas</li>
+        <li class="checked">zout</li>
+        <li>peper</li>
+
+        <!-- Enkele test ingredienten die ### moeten opleveren in hun <span>s (zie opgave) -->
+        <!--
+        <li><span class="amount" data-amount-per-person="">???</span> attribuutwaarde leeg</li>
+        <li><span class="amount">???</span> attribuut ontbreekt</li>
+        <li><span class="amount" data-amount-per-person="Fristi!">???</span> attribuutwaarde NaN</li>
+        -->
+    </ul>
+</div>
+</body>
+</html>

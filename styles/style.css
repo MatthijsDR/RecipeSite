@@ -1,0 +1,30 @@
+body {
+    margin:0;
+}
+
+.controls {
+    padding:10px;
+    border-bottom:1px solid black;
+}
+
+.controls p {
+    margin:0;
+}
+
+#txtAmountPerPerson {
+    width:5em;
+}
+
+#txtDescription {
+    width:15em;
+}
+
+.recipe {
+    padding:10px;
+}
+
+#txtPersonCount {
+    width:3em;
+}
+
+
